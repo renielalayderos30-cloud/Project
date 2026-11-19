@@ -80,10 +80,29 @@ nav a {
     font-weight: 600;
 }
 
+nav a {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #d99ba3;
+    transition: width 0.3s ease;
+}
+
 nav a:hover {
     color: #d99ba3;
 }
 
+nav a:hover::after {
+    width: 100%;
+}
 /* =================================
    HOME SECTION
 ================================= */
