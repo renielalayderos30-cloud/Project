@@ -138,9 +138,33 @@ nav a:hover::after {
     max-width: 340px;
     aspect-ratio: 4 / 5;
     object-fit: cover;
-    border-radius: 48%;
-    border: 5px solid #d99ba3;
-    box-shadow: 0 0 35px rgba(217, 155, 163, 0.15);
+    border-radius: 22px;
+    border: 2px solid #d99ba3;
+    box-shadow: 0 10px 35px rgba(217, 155, 163, 0.12);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.home-image img:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(217, 155, 163, 0.22);
+}
+.home-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+}
+
+.home-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 22px;
+    background: linear-gradient(
+        135deg,
+        rgba(217, 155, 163, 0.10),
+        transparent 60%
+    );
+    pointer-events: none;
 }
 
 .home-greeting {
