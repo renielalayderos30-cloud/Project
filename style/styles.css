@@ -1,12 +1,9 @@
 
-/* =================================
-   RENIELA'S PERSONAL PORTFOLIO
-   Soft Rose Theme
-================================= */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-/* GENERAL SETTINGS */
+/* =================================
+   GENERAL SETTINGS
+================================= */
 
 * {
     margin: 0;
@@ -17,8 +14,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #fff9f6;
-    color: #3d3032;
+    background: #0d0d0d;
+    color: #f5f5f5;
     line-height: 1.7;
 }
 
@@ -30,17 +27,17 @@ a {
 section {
     padding: 100px 10%;
     min-height: 300px;
-    border-bottom: 1px solid #f0e2df;
+    border-bottom: 1px solid #242124;
 }
 
 section h2 {
+    color: #d99ba3;
     font-size: 32px;
     margin-bottom: 15px;
-    color: #b76e79;
 }
 
 section p {
-    color: #79686a;
+    color: #b8afb2;
 }
 
 /* =================================
@@ -51,9 +48,9 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 249, 246, 0.95);
+    background: rgba(15, 14, 15, 0.95);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid #f0dedb;
+    border-bottom: 1px solid #292326;
 }
 
 nav {
@@ -66,7 +63,7 @@ nav {
 .logo {
     font-size: 25px;
     font-weight: 800;
-    color: #b76e79;
+    color: #d99ba3;
     letter-spacing: -1px;
 }
 
@@ -78,13 +75,13 @@ nav ul {
 }
 
 nav a {
-    color: #665457;
+    color: #d0c6c9;
     font-size: 14px;
     font-weight: 600;
 }
 
 nav a:hover {
-    color: #b76e79;
+    color: #d99ba3;
 }
 
 /* =================================
@@ -95,6 +92,13 @@ nav a:hover {
     display: flex;
     align-items: center;
     min-height: 85vh;
+    background:
+        radial-gradient(
+            circle at 15% 50%,
+            rgba(217, 155, 163, 0.08),
+            transparent 35%
+        ),
+        #0d0d0d;
 }
 
 .home-container {
@@ -117,11 +121,11 @@ nav a:hover {
     object-fit: cover;
     border-radius: 48%;
     border: 5px solid #d99ba3;
-    box-shadow: 0 0 35px rgba(183, 110, 121, 0.18);
+    box-shadow: 0 0 35px rgba(217, 155, 163, 0.15);
 }
 
 .home-greeting {
-    color: #b76e79;
+    color: #d99ba3;
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 3px;
@@ -132,23 +136,23 @@ nav a:hover {
     font-size: 43px;
     line-height: 1.2;
     margin-bottom: 15px;
-    color: #3d3032;
+    color: #f5f5f5;
 }
 
 .home-content h1 span {
-    color: #b76e79;
+    color: #d99ba3;
 }
 
 .home-content h2 {
     font-size: 19px;
-    color: #79686a;
+    color: #c4b8bc;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
 .home-content > p:not(.home-greeting) {
     max-width: 550px;
-    color: #79686a;
+    color: #b8afb2;
     margin-bottom: 28px;
 }
 
@@ -171,26 +175,26 @@ nav a:hover {
 }
 
 .btn-primary {
-    background: #b76e79;
-    color: white;
-    border: 1px solid #b76e79;
+    background: #c7838e;
+    color: #ffffff;
+    border: 1px solid #c7838e;
 }
 
 .btn-primary:hover {
-    background: #96515e;
-    border-color: #96515e;
+    background: #a9616e;
+    border-color: #a9616e;
     transform: translateY(-3px);
 }
 
 .btn-secondary {
-    color: #96515e;
-    border: 1px solid #b76e79;
+    color: #d99ba3;
+    border: 1px solid #d99ba3;
     background: transparent;
 }
 
 .btn-secondary:hover {
-    background: #b76e79;
-    color: white;
+    background: #c7838e;
+    color: #ffffff;
     transform: translateY(-3px);
 }
 
@@ -209,12 +213,12 @@ nav a:hover {
 
 .about-content h3 {
     font-size: 20px;
-    color: #96515e;
+    color: #d99ba3;
     margin-bottom: 20px;
 }
 
 .about-content p {
-    color: #79686a;
+    color: #b8afb2;
     margin-bottom: 18px;
 }
 
@@ -231,17 +235,17 @@ nav a:hover {
     gap: 5px;
     padding: 16px;
     border-radius: 10px;
-    background: #ffffff;
-    border: 1px solid #f0dedb;
+    background: #171516;
+    border: 1px solid #30272b;
 }
 
 .about-details strong {
-    color: #b76e79;
+    color: #d99ba3;
     font-size: 14px;
 }
 
 .about-details span {
-    color: #79686a;
+    color: #c4b8bc;
     font-size: 14px;
 }
 
@@ -268,27 +272,26 @@ nav a:hover {
 .skill-card {
     padding: 30px 20px;
     border-radius: 14px;
-    background: #ffffff;
-    border: 1px solid #f0dedb;
-    box-shadow: 0 8px 25px rgba(120, 75, 75, 0.05);
+    background: #171516;
+    border: 1px solid #30272b;
     transition: 0.3s ease;
 }
 
 .skill-card:hover {
     transform: translateY(-7px);
     border-color: #d99ba3;
-    box-shadow: 0 12px 30px rgba(183, 110, 121, 0.12);
+    box-shadow: 0 12px 30px rgba(217, 155, 163, 0.08);
 }
 
 .skill-card h3 {
-    color: #b76e79;
+    color: #d99ba3;
     font-size: 17px;
     margin-bottom: 10px;
 }
 
 .skill-card p {
     font-size: 14px;
-    color: #79686a;
+    color: #b8afb2;
 }
 
 /* =================================
@@ -315,33 +318,32 @@ nav a:hover {
     text-align: left;
     padding: 30px 25px;
     border-radius: 14px;
-    background: #ffffff;
-    border: 1px solid #f0dedb;
-    box-shadow: 0 8px 25px rgba(120, 75, 75, 0.05);
+    background: #171516;
+    border: 1px solid #30272b;
     transition: 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-7px);
     border-color: #d99ba3;
-    box-shadow: 0 12px 30px rgba(183, 110, 121, 0.12);
+    box-shadow: 0 12px 30px rgba(217, 155, 163, 0.08);
 }
 
 .project-number {
-    color: #b76e79;
+    color: #d99ba3;
     font-size: 14px;
     font-weight: 800;
     margin-bottom: 18px;
 }
 
 .project-card h3 {
-    color: #3d3032;
+    color: #f5f5f5;
     font-size: 18px;
     margin-bottom: 12px;
 }
 
 .project-card p {
-    color: #79686a;
+    color: #b8afb2;
     font-size: 14px;
     margin-bottom: 20px;
 }
@@ -353,8 +355,8 @@ nav a:hover {
 }
 
 .project-tags span {
-    color: #b76e79;
-    background: #fcebed;
+    color: #e2aeb5;
+    background: #302126;
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 11px;
@@ -376,7 +378,7 @@ nav a:hover {
 }
 
 .contact-description {
-    color: #79686a;
+    color: #b8afb2;
     margin: 15px auto 30px;
 }
 
@@ -388,8 +390,8 @@ nav a:hover {
 }
 
 .social-links a {
-    color: #665457;
-    border: 1px solid #e8cfcc;
+    color: #d0c6c9;
+    border: 1px solid #403238;
     padding: 10px 25px;
     border-radius: 8px;
     font-size: 14px;
@@ -397,8 +399,8 @@ nav a:hover {
 }
 
 .social-links a:hover {
-    color: #b76e79;
-    border-color: #b76e79;
+    color: #d99ba3;
+    border-color: #d99ba3;
     transform: translateY(-3px);
 }
 
@@ -409,8 +411,8 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 25px;
-    background: #f7eeeb;
-    color: #79686a;
+    background: #121011;
+    color: #9f9296;
     font-size: 13px;
 }
 
@@ -427,16 +429,16 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #b76e79;
+    background: #c7838e;
     color: white;
     border-radius: 50%;
     font-size: 22px;
-    box-shadow: 0 5px 15px rgba(183, 110, 121, 0.2);
+    box-shadow: 0 5px 15px rgba(217, 155, 163, 0.15);
     transition: 0.3s ease;
 }
 
 .back-to-top:hover {
-    background: #96515e;
+    background: #a9616e;
     transform: translateY(-4px);
 }
 
@@ -446,7 +448,7 @@ footer {
 
 a:focus-visible,
 button:focus-visible {
-    outline: 3px solid #b76e79;
+    outline: 3px solid #d99ba3;
     outline-offset: 4px;
 }
 
@@ -455,7 +457,6 @@ button:focus-visible {
 ================================= */
 
 @media (max-width: 900px) {
-
     section {
         padding: 80px 7%;
     }
@@ -479,7 +480,6 @@ button:focus-visible {
 }
 
 @media (max-width: 768px) {
-
     nav {
         flex-direction: column;
         gap: 15px;
@@ -529,7 +529,6 @@ button:focus-visible {
 }
 
 @media (max-width: 480px) {
-
     section {
         padding: 65px 6%;
     }
