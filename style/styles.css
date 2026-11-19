@@ -1037,3 +1037,140 @@ button:focus-visible {
     }
 }
 
+/* =====================================
+   CONTACT SECTION - FINAL DESIGN
+===================================== */
+
+#contact {
+    position: relative;
+    overflow: hidden;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    text-align: center;
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(217, 155, 163, 0.08),
+            transparent 55%
+        ),
+        #0d0d0d;
+}
+
+.contact-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.contact-container .section-label {
+    margin-bottom: 20px;
+}
+
+.contact-container h2 {
+    max-width: 650px;
+    margin: 0 auto 22px;
+    font-size: clamp(35px, 5vw, 55px);
+    line-height: 1.2;
+    letter-spacing: -2px;
+}
+
+.contact-container h2 span {
+    color: #d99ba3;
+}
+
+.contact-description {
+    max-width: 520px;
+    margin: 0 auto;
+    color: #b8afb2;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.contact-divider {
+    width: 65px;
+    height: 2px;
+    margin: 35px auto;
+    background: #d99ba3;
+    opacity: 0.7;
+}
+
+.contact-social-label {
+    margin-bottom: 18px;
+    color: #a99da1;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 20px;
+    background: #171516;
+    border: 1px solid #30272b;
+    border-radius: 12px;
+    color: #f5f0f1;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #d99ba3;
+    border-color: #d99ba3;
+    background: #1d181a;
+    transform: translateY(-5px);
+}
+
+.social-links a > span:first-child {
+    color: #d99ba3;
+    font-size: 17px;
+}
+
+.social-arrow {
+    color: #d99ba3;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover .social-arrow {
+    transform: translate(3px, -3px);
+}
+
+.contact-note {
+    margin-top: 45px;
+    color: #796c71;
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* CONTACT MOBILE */
+
+@media (max-width: 600px) {
+    #contact {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .contact-container h2 {
+        letter-spacing: -1px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links a {
+        width: 200px;
+        justify-content: space-between;
+    }
+}
+
