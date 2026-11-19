@@ -1,0 +1,182 @@
+
+/* =================================
+   RENIELA'S PERSONAL THEME
+================================= */
+
+body {
+    background: #fff9f6;
+    color: #3d3032;
+}
+
+header {
+    background: rgba(255, 249, 246, 0.95);
+    border-bottom: 1px solid #f0dedb;
+}
+
+.logo,
+section h2,
+#home h2,
+.home-greeting,
+.home-content h1 span,
+.about-details strong,
+.skill-card h3 {
+    color: #b76e79;
+}
+
+nav a {
+    color: #665457;
+}
+
+nav a:hover {
+    color: #b76e79;
+}
+
+section {
+    border-bottom: 1px solid #f0e2df;
+}
+
+section p,
+.home-content > p:not(.home-greeting),
+.about-details span {
+    color: #79686a;
+}
+
+.skill-card,
+.project-card,
+.about-details div,
+.contact-card {
+    background: #ffffff;
+    border: 1px solid #f0dedb;
+    box-shadow: 0 8px 25px rgba(120, 75, 75, 0.05);
+}
+
+.skill-card:hover,
+.project-card:hover {
+    border-color: #d99ba3;
+}
+
+.project-number,
+.project-tags span {
+    color: #b76e79;
+}
+
+.project-tags span {
+    background: #fcebed;
+}
+
+.home-image img {
+    border-color: #d99ba3;
+    box-shadow: 0 0 35px rgba(183, 110, 121, 0.18);
+}
+
+.btn-primary,
+#home a.btn-primary,
+.back-to-top {
+    background: #b76e79;
+}
+
+.btn-primary:hover,
+.back-to-top:hover {
+    background: #96515e;
+}
+
+.btn-secondary {
+    color: #96515e;
+    border-color: #b76e79;
+}
+
+.btn-secondary:hover {
+    background: #b76e79;
+    color: white;
+}
+
+.social-links a {
+    color: #665457;
+    border-color: #e8cfcc;
+}
+
+.social-links a:hover {
+    color: #b76e79;
+    border-color: #b76e79;
+}
+
+footer {
+    background: #f7eeeb;
+    color: #79686a;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline-color: #b76e79;
+}
+
+/* =================================
+   PERSONAL MOMENTS GALLERY
+================================= */
+
+#moments {
+    text-align: center;
+}
+
+.moments-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.moments-description {
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.moments-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.moment-card {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #f7eeeb;
+    box-shadow: 0 10px 30px rgba(80, 50, 50, 0.12);
+}
+
+.moment-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.moment-card:hover img {
+    transform: scale(1.05);
+}
+
+.moment-overlay {
+    padding: 22px;
+    background: #f7eeeb;
+}
+
+.moment-overlay h3 {
+    color: #96515e;
+    margin-bottom: 8px;
+}
+
+.moment-overlay p {
+    margin: auto;
+    font-size: 14px;
+}
+
+/* =================================
+   MOBILE ADJUSTMENTS
+================================= */
+
+@media (max-width: 768px) {
+    .moment-card {
+        max-width: 320px;
+    }
+}
